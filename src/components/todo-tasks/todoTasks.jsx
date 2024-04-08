@@ -1,3 +1,4 @@
+import { useState } from "react";
 import TodoTask from "../todo-task/todoTask";
 
 
@@ -10,13 +11,11 @@ const TodoTasks = () => {
             </div>
 
             <div>
-                <TodoTask taskName={'Test'}/>
+                <TodoTask taskName={'Test01'}/>
             </div>
 
-
-
             <div className="absolute bottom-0 right-0 m-6 text-white font-bold py-2 px-4 rounded-3xl w-[150px] text-center
-            bg-gradient-to-r from-violet-500 to-violet-700 hover:to-teal-500 hover:from-violet-700">
+            bg-gradient-to-r from-violet-500 to-violet-700 hover:to-teal-500 hover:from-violet-700 cursor-pointer">
                 <button>Add Task</button>
             </div>
         </div>
